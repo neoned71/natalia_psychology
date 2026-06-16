@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology 11 - Learning</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --paper:#f6f1e8;
+    --ink:#2d2d2d;
+    --accent:#6c63ff;
+    --soft:#e6e1d8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:2rem;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:radial-gradient(circle,
+    rgba(108,99,255,.15),
+    transparent 70%);
+    top:-200px;
+    right:-200px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(3rem,8vw,6rem);
+    margin-bottom:1rem;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.2rem;
+    opacity:.8;
+}
+
+.brain{
+    font-size:6rem;
+    margin-bottom:1rem;
+}
+
+.container{
+    width:min(900px,90%);
+    margin:auto;
+}
+
+.section{
+    margin:6rem 0;
+}
+
+.section h2{
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    margin-bottom:1rem;
+    color:var(--accent);
+}
+
+.quote{
+    border-left:4px solid var(--accent);
+    padding-left:1.5rem;
+    margin:2rem 0;
+    font-style:italic;
+    font-size:1.2rem;
+}
+
+.card{
+    background:white;
+    padding:2rem;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-top:2rem;
+}
+
+.learning-types{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+    margin-top:2rem;
+}
+
+.type-card{
+    background:white;
+    padding:1.5rem;
+    border-radius:18px;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.type-card:hover{
+    transform:translateY(-5px);
+}
+
+.type-card h3{
+    color:var(--accent);
+    margin-bottom:.75rem;
+}
+
+.cite{
+    font-style:italic;
+    color:#555;
+}
+
+.experiment{
+    background:white;
+    padding:2rem;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin:2rem 0;
+}
+
+.experiment h3{
+    font-family:'Playfair Display',serif;
+    color:var(--accent);
+    margin-bottom:1rem;
+    font-size:1.5rem;
+}
+
+.timeline{
+    margin-top:2rem;
+    border-left:3px solid var(--accent);
+    padding-left:2rem;
+}
+
+.timeline-item{
+    margin-bottom:2rem;
+}
+
+footer{
+    text-align:center;
+    padding:4rem 2rem;
+    color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="brain">🧠</div>
+    <h1>The Psychology of Learning</h1>
+    <p>
+        Learning shapes who we are, but is not the same for everyone.
+         No two brains are alike.
+         Dive into the concept of learning now!
+
+
+
+       
+        
+    </p>
+</section>
+
+<div class="container">
+
+<section class="section">
+    <h2>What is Learning?</h2>
+
+    <p>
+        In psychology, learning is the process of acquiring new information through experience or behaviors.
+        Because of learning, we humans are able to adapt to our environments.
+        
+    </p>
+
+    <div class="quote">
+        "Learning is not simply storing information; it is changing
+        the way we understand and interact with the world."
+    </div>
+
+    <div class="card">
+        <strong>Key Idea:</strong>
+        Learning involves experience, practice, rerouting, and adaptation.
+        It is one of the most important processes in which is studied in psychology.
+    </div>
+</section>
+
+<section class="section">
+    <h2>Defining Conditioning</h2>
+
+    <p>
+        <strong>Conditioning</strong> is the process by which we learn associations.
+        There are two main types: <strong>classical conditioning</strong> and
+        <strong>operant conditioning</strong>.
+    </p>
+
+    <p>
+        In classical conditioning, an association between two stimuli is learned
+        to anticipate events. <span class="cite">"We learn that a flash of lightning
+        signals an impending crack of thunder, so when lightning flashes nearby,
+        we start to brace ourselves,"</span> Myers, D. G. (2008).
+    </p>
+
+    <p>
+        In operant conditioning, we learn to associate a behavior with its
+        consequence. When a reward follows a behavior or action, we are more
+        likely to repeat it; when a punishment follows a behavior or action,
+        we often avoid repeating it.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Types of Learning</h2>
+
+    <div class="learning-types">
+
+        <div class="type-card">
+            <h3>Classical Conditioning</h3>
+            <p>
+                A type of learning in which one learns to associate two or more stimuli and thus anticipate events.
+                - A neutral stimulus (NS), a stimulus that elicits no response prior to conditioning,
+                 becomes linked with a meaningful stimulus.
+            </p>
+        </div>
+
+        <div class="type-card">
+            <h3>Operant Conditioning</h3>
+            <p>
+                A type of learning in which behavior is strengthened if followed by a reinforcer
+                or diminished if followed by a punishment.
+            </p>
+        </div>
+
+        <div class="type-card">
+            <h3>Observational Learning</h3>
+            <p>
+                Learning initiated by observing others. We humans have the tendency 
+                to imitate behaviors observed within people around us.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Classical Conditioning</h2>
+
+    <p>
+        Understanding classical conditioning through <strong>Ivan Pavlov</strong>,
+        a Russian-Soviet neurologist and physiologist whose early twentieth-century
+        experiment on classical conditioning remains foundational to psychology.
+        Pavlov's work also aided many psychologists, including being foundational
+        to <strong>John B. Watson</strong>'s ideas. Watson and Pavlov both shared
+        an indifference to "mentalistic" concepts and believed that the basic laws
+        of learning were mutual for all animals.
+    </p>
+
+    <p>
+        Pavlov observed that putting food in a dog's mouth caused it to salivate.
+        The dog's salivation not only began in response to the taste of the food,
+        but also began when the food was in mere sight of the dog, as well as in
+        response to the person delivering the food, or the sound of the person's
+        approaching footsteps. Pavlov considered these secretions a distraction
+        until he realized they pointed to a simple, but important, form of learning.
+    </p>
+
+    <div class="experiment">
+        <h3>Pavlov's Experiment</h3>
+        <p>
+            To explore this phenomenon objectively, Pavlov and his team isolated the
+            dog in a small room, secured it using a harness, and attached a device to
+            redirect saliva into a measuring instrument. They presented food by sliding
+            a food bowl in and blowing meat powder into the dog's mouth at a precise
+            moment.
+        </p>
+        <p>
+            Just before placing food in the dog's mouth, Pavlov sounded a tone.
+            After several pairings of tone and food, the dog — anticipating the meat
+            powder — began salivating to the tone alone. In later experiments, a
+            buzzer, a light, and a touch on the leg were also used as signals.
+        </p>
+
+        <div class="card">
+            <strong>Before Conditioning:</strong> Tone → No Salivation<br>
+            <strong>During Conditioning:</strong> Tone + Food → Salivation<br>
+            <strong>After Conditioning:</strong> Tone → Salivation
+        </div>
+    </div>
+
+    <p>
+        Few researchers today propose that psychology should ignore mental
+        processes, however a large number of researchers agree that classical
+        conditioning is a fundamental form of learning that enables all living
+         organisms to adapt to their environment.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Operant Conditioning</h2>
+
+    <p>
+        In operant conditioning, association between a behavior and its consequence 
+        are learnt. Psychologist <strong>B.F. Skinner</strong> proposed
+        that behavior is shaped by repercussions. Positive reinforcement promotes
+        behavior by adding something pleasant, while punishment decreases behavior.
+    </p>
+
+    <div class="learning-types">
+
+        <div class="type-card">
+            <h3>Positive Reinforcement</h3>
+            <p>Receiving praise for completing homework.</p>
+        </div>
+
+        <div class="type-card">
+            <h3>Negative Reinforcement</h3>
+            <p>Stopping an annoying alarm by getting out of bed.</p>
+        </div>
+
+        <div class="type-card">
+            <h3>Punishment</h3>
+            <p>Losing privileges after breaking rules.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Observational Learning</h2>
+
+    <p>
+       Canadian-American psychologist, Albert Bandura, indicated that people learn by observing others.
+        Children often tend to imitate behaviors they observe from parents,
+        family members, peers, teachers, etc.
+    </p>
+
+    <div class="card">
+        Observation → Attention → Memory → Imitation
+    </div>
+</section>
+
+<section class="section">
+    <h2>Learning Through Life</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>Childhood</h3>
+            <p>Language, social skills, and basic behaviors develop.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Adolescence</h3>
+            <p>Complex reasoning and identity formation emerge.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Adulthood</h3>
+            <p>Learning continues through careers, hobbies, and relationships.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Learning Matters</h2>
+
+    <p>
+        Learning allows for us humans to adapt to new environments,
+        problem solve using critical thinking, communicate effectively, and build functioning societies.
+        Understanding how learning works and how crucial it is in our everyday lives
+        helps us to become more effective lifelong learners.
+    </p>
+
+    <div class="quote">
+        Every skill you possess today was once something you did not know.
+    </div>
+</section>
+
+</div>
+
+<footer>
+    Psychology 11th edition (David G. Myers, C. Nathan Dewall)• Chapter 7: Learning • Designed as an educational blog
+</footer>
+
+</body>
+</html>
